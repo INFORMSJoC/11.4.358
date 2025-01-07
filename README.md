@@ -7,7 +7,7 @@ Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](
 
 The software and data in this repository are a snapshot of the software and data
 that were used in the research reported on in the paper 
-[This is a Template](https://doi.org/10.1287/ijoc.2019.0000) by T. Ralphs. 
+[This is a Template](https://doi.org/10.1287/ijoc.11.4.358) by V.Maniezzo. 
 The snapshot is based on 
 [this SHA](https://github.com/tkralphs/JoCTemplate/commit/f7f30c63adbcb0811e5a133e1def696b74f3ba15) 
 in the development repository. 
@@ -20,86 +20,37 @@ get a more recent version or would like support**
 
 To cite the contents of this repository, please cite both the paper and this repo, using their respective DOIs.
 
-https://doi.org/10.1287/ijoc.2019.0000
+https://doi.org/10.1287/ijoc.11.4.358
 
-https://doi.org/10.1287/ijoc.2019.0000.cd
+https://doi.org/10.1287/ijoc.11.4.358.cd
 
 Below is the BibTex for citing this snapshot of the repository.
 
 ```
 @misc{CacheTest,
-  author =        {T. Ralphs},
+  author =        {V.Maniezzo},
   publisher =     {INFORMS Journal on Computing},
   title =         {{CacheTest}},
   year =          {2020},
-  doi =           {10.1287/ijoc.2019.0000.cd},
-  url =           {https://github.com/INFORMSJoC/2019.0000},
-  note =          {Available for download at https://github.com/INFORMSJoC/2019.0000},
+  doi =           {10.1287/ijoc.11.4.358.cd},
+  url =           {https://github.com/INFORMSJoC/11.4.358},
+  note =          {Available for download at https://github.com/INFORMSJoC/11.4.358},
 }  
 ```
 
 ## Description
 
-The goal of this software is to demonstrate the effect of cache optimization.
+The code and data in this repository are those left on my hard disk at the time of publication. The original code is in Fortran, a language I can no longer use. I moved to ANSI C immediately afterwards, and there are actually two translations, but they are post-publication works, possibly incomplete.
 
-## Building
-
-In Linux, to build the version that multiplies all elements of a vector by a
-constant (used to obtain the results in [Figure 1](results/mult-test.png) in the
-paper), stepping K elements at a time, execute the following commands.
-
-```
-make mult
-```
-
-Alternatively, to build the version that sums the elements of a vector (used
-to obtain the results [Figure 2](results/sum-test.png) in the paper), stepping K
-elements at a time, do the following.
-
-```
-make clean
-make sum
-```
-
-Be sure to make clean before building a different version of the code.
+The fortran code makes use of R.E. Burkard's linear assignment routine for which I can find no reference, but it is cited in the paper.
 
 ## Results
 
-Figure 1 in the paper shows the results of the multiplication test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
-
-![Figure 1](results/mult-test.png)
-
-Figure 2 in the paper shows the results of the sum test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
-
-![Figure 1](results/sum-test.png)
+Besdes the results reported in the paper, I found one results table contained in an Excel file that I include in the results section of the repository.
 
 ## Replicating
 
-To replicate the results in [Figure 1](results/mult-test), do either
-
-```
-make mult-test
-```
-or
-```
-python test.py mult
-```
-To replicate the results in [Figure 2](results/sum-test), do either
-
-```
-make sum-test
-```
-or
-```
-python test.py sum
-```
-
-## Ongoing Development
-
-This code is being developed on an on-going basis at the author's
-[Github site](https://github.com/tkralphs/JoCTemplate).
+I am currently unable to reproduce the tests as I have never used Fortran since. However, I will be happy to include instructions on how to rebuild the code using widely available open source Windows compilers.
 
 ## Support
 
