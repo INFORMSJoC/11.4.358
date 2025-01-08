@@ -9,7 +9,7 @@ The software and data in this repository are a snapshot of the software and data
 that were used in the research reported on in the paper 
 [Exact and Approximate Nondeterministic Tree-Search Procedures for the Quadratic Assignment Problem](https://doi.org/10.1287/ijoc.11.4.358) by V.Maniezzo. 
 This paper was awarded the _INFORMS Journal of Computing_ Test of Time Paper Award for 1996-2000.
-Some 25 years later, V. Maniezzo found the associated code on a hard-drive, and we make the code available here for historical interest.
+Some 25 years later, V. Maniezzo found the associated code on a hard drive, and so we make the code available here for historical interest.
 
 ## Cite
 
